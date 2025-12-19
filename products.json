@@ -1,0 +1,20 @@
+[
+  {
+    "name": " Milk",
+    "price": 80,
+    "unit": "Litre",
+    "image": "https://png.pngtree.com/png-clipart/20240619/original/pngtree-a-bottle-in-fresh-splash-milk-png-image_15366664.png"
+  },
+  {
+    "name": "Fresh Curd",
+    "price": 50,
+    "unit": "500ml",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdOYiGjdDtWLHPpIR9FgWK7BEF_sPirwfieA&s"
+  },
+  {
+    "name": "Milk 500ml",
+    "price": 40,
+    "unit": "500ml",
+    "image": "https://img500.exportersindia.com/product_images/bc-500/2022/11/11009857/buffalo-milk-1667535995-6609495.jpeg"
+  }
+]

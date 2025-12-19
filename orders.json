@@ -1,0 +1,240 @@
+[
+  {
+    "name": "raviteja",
+    "phone": "8555046738",
+    "items": [
+      {
+        "name": "Fresh Cow Milk",
+        "qty": 1
+      },
+      {
+        "name": "Fresh Curd",
+        "qty": 1
+      },
+      {
+        "name": "Milk 500ml",
+        "qty": 1
+      }
+    ],
+    "total": 170,
+    "location": "17.3980729, 78.3328528",
+    "date": "9/11/2025, 1:03:15 pm"
+  },
+  {
+    "name": "raviteja",
+    "phone": "85555854",
+    "items": [
+      {
+        "name": "Milk 500ml",
+        "qty": 1
+      }
+    ],
+    "total": 40,
+    "location": "17.3980729, 78.3328528",
+    "date": "9/11/2025, 1:04:23 pm"
+  },
+  {
+    "name": "raviteja",
+    "phone": "8555046738",
+    "items": [
+      {
+        "name": "Fresh Cow Milk",
+        "qty": 2
+      }
+    ],
+    "total": 160,
+    "location": "17.398075, 78.3328674",
+    "date": "9/11/2025, 2:13:38 pm"
+  },
+  {
+    "name": "raviteja",
+    "phone": "8555046738",
+    "items": [
+      {
+        "name": "Fresh Cow Milk",
+        "qty": 2
+      },
+      {
+        "name": "Fresh Curd",
+        "qty": 1
+      },
+      {
+        "name": "Milk 500ml",
+        "qty": 1
+      }
+    ],
+    "total": 250,
+    "location": "17.3980772, 78.3328655",
+    "date": "9/11/2025, 2:15:31 pm"
+  },
+  {
+    "name": "pragnan",
+    "phone": "9381017020",
+    "items": [
+      {
+        "name": "Fresh bufflo Milk",
+        "qty": 1
+      }
+    ],
+    "total": 80,
+    "location": "20.593684, 78.96288",
+    "date": "9/11/2025, 3:41:18 pm"
+  },
+  {
+    "name": "basith",
+    "phone": "8309166629",
+    "items": [
+      {
+        "name": " Milk",
+        "qty": 1
+      },
+      {
+        "name": "Fresh Curd",
+        "qty": 2
+      },
+      {
+        "name": "Milk 500ml",
+        "qty": 1
+      }
+    ],
+    "total": 220,
+    "location": "20.593684, 78.96288",
+    "date": "9/11/2025, 6:16:42 pm"
+  },
+  {
+    "name": "renuka",
+    "phone": "9948477473",
+    "items": [
+      {
+        "name": " Milk",
+        "qty": 1
+      },
+      {
+        "name": "Fresh Curd",
+        "qty": 2
+      },
+      {
+        "name": "Milk 500ml",
+        "qty": 4
+      }
+    ],
+    "total": 340,
+    "location": "20.593684, 78.96288",
+    "date": "10/11/2025, 7:50:31 pm"
+  },
+  {
+    "name": "hemanth",
+    "phone": "9392468913",
+    "items": [
+      {
+        "name": " Milk",
+        "qty": 1
+      },
+      {
+        "name": "Fresh Curd",
+        "qty": 1
+      },
+      {
+        "name": "Milk 500ml",
+        "qty": 1
+      }
+    ],
+    "total": 170,
+    "location": "20.593684, 78.96288",
+    "date": "10/11/2025, 10:37:22 pm"
+  },
+  {
+    "name": "hemanth",
+    "phone": "9381017020",
+    "items": [
+      {
+        "name": "paneer",
+        "qty": 1
+      }
+    ],
+    "total": 50,
+    "location": "20.593684, 78.96288",
+    "date": "10/11/2025, 10:38:44 pm"
+  },
+  {
+    "name": "raviteja",
+    "phone": "8555046738",
+    "items": [
+      {
+        "name": "Fresh Curd",
+        "qty": 1
+      }
+    ],
+    "total": 50,
+    "location": "17.3932544, 78.3417344",
+    "date": "11/11/2025, 11:15:59 pm"
+  },
+  {
+    "name": "keerthana",
+    "phone": "6281401387",
+    "items": [
+      {
+        "name": " Milk",
+        "qty": 1
+      },
+      {
+        "name": "Fresh Curd",
+        "qty": 10
+      },
+      {
+        "name": "Milk 500ml",
+        "qty": 2
+      }
+    ],
+    "total": 660,
+    "location": "17.3900768, 78.3215276",
+    "date": "12/11/2025, 9:59:04 am"
+  },
+  {
+    "name": "raviteja",
+    "phone": "8555046738",
+    "items": [
+      {
+        "name": " Milk",
+        "qty": 1
+      }
+    ],
+    "total": 80,
+    "location": "17.4751744, 78.3876096",
+    "date": "22/11/2025, 6:00:05 pm"
+  },
+  {
+    "name": "raviteja",
+    "phone": "8555046738",
+    "items": [
+      {
+        "name": " Milk",
+        "qty": 1
+      },
+      {
+        "name": "Fresh Curd",
+        "qty": 1
+      },
+      {
+        "name": "Milk 500ml",
+        "qty": 1
+      }
+    ],
+    "total": 170,
+    "location": "17.4948352, 78.381056",
+    "date": "18/12/2025, 10:14:30 pm"
+  },
+  {
+    "name": "amullu",
+    "phone": "123456789",
+    "items": [
+      {
+        "name": " Milk",
+        "qty": 1
+      }
+    ],
+    "total": 80,
+    "location": "17.3980858, 78.3328148",
+    "date": "18/12/2025, 10:27:19 pm"
+  }
+]

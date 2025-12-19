@@ -1,0 +1,25 @@
+{
+  "name": "milkmart-backend",
+  "version": "1.0.0",
+  "description": "MilkMart Backend Server with Twilio integration",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "multer": "^2.0.2",
+    "twilio": "^4.23.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["express", "twilio", "backend", "milkmart"],
+  "author": "Raviteja Naidu",
+  "license": "ISC"
+}
