@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MilkMart - Orders</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background: #3498db;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2980b9;
+    }
+
+    .summary {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-size: 18px;
+      color: #27ae60;
+      text-align: center;
+    }
+
+    .order {
+      background: #ffffff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .order-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      color: #34495e;
+    }
+
+    .items {
+      margin-top: 10px;
+      padding-left: 15px;
+    }
+
+    .items li {
+      margin-bottom: 5px;
+    }
+
+    .total {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #27ae60;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: #555;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>📦 MilkMart Orders</h1>
+
+<div class="top-bar">
+  <button onclick="exportToExcel()">⬇ Export to Excel</button>
+</div>
+
+<div id="dailyTotal" class="summary"></div>
+
+<div id="orders"></div>
+
+<script>
+async function loadOrders() {
+  const res = await fetch("/api/orders");
+  const orders = await res.json();
+
+  const container = document.getElementById("orders");
+  const dailyTotalDiv = document.getElementById("dailyTotal");
+
+  container.innerHTML = "";
+  let today = new Date().toLocaleDateString();
+  let dailyTotal = 0;
+
+  orders.reverse().forEach(order => {
+    if (order.date.includes(today)) {
+      dailyTotal += order.total;
+    }
+
+    const mapLink = `https://www.google.com/maps?q=${order.location}`;
+
+    const div = document.createElement("div");
+    div.className = "order";
+
+    div.innerHTML = `
+      <div class="order-header">
+        <span>${order.name} (${order.phone})</span>
+        <span>${order.date}</span>
+      </div>
+
+      <ul class="items">
+        ${order.items.map(i => `<li>${i.name} × ${i.qty}</li>`).join("")}
+      </ul>
+
+      <div class="total">Total: ₹${order.total}</div>
+
+      <div class="meta">
+        📍 <a href="${mapLink}" target="_blank">View on Google Maps</a>
+      </div>
+    `;
+
+    container.appendChild(div);
+  });
+
+  dailyTotalDiv.innerHTML = `📊 Today's Total Sales: ₹${dailyTotal}`;
+}
+
+function exportToExcel() {
+  fetch("/api/orders")
+    .then(res => res.json())
+    .then(orders => {
+      let csv = "Name,Phone,Items,Total,Location,Date\n";
+
+      orders.forEach(o => {
+        const items = o.items.map(i => `${i.name}(${i.qty})`).join(" | ");
+        csv += `"${o.name}","${o.phone}","${items}","${o.total}","${o.location}","${o.date}"\n`;
+      });
+
+      const blob = new Blob([csv], { type: "text/csv" });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "MilkMart_Orders.csv";
+      a.click();
+    });
+}
+
+loadOrders();
+</script>
+
+</body>
+</html>
